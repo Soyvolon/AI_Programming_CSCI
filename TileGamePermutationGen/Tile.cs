@@ -97,14 +97,7 @@ internal class Tile
 
     private bool InParentTree(Tile tile)
     {
-        if (whitespace != tile.whitespace)
-        {
-            if (parent is not null)
-                return parent.InParentTree(tile);
-            return false;
-        }
-
-        if (PositionsEqual(tile))
+        if (!PositionsEqual(tile))
         {
             if (parent is not null)
                 return parent.InParentTree(tile);
@@ -116,7 +109,7 @@ internal class Tile
 
     public bool PositionsEqual(Tile tile)
     {
-        for (int x = 0; x < positions.GetLength(1); x++)
+        for (int x = 0; x < positions.GetLength(0); x++)
         {
             for (int y = 0; y < positions.GetLength(1); y++)
             {

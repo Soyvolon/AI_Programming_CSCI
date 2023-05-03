@@ -17,7 +17,7 @@ parentNode.positions[2, 2] = 1;
 
 var goal = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, {7, 8, 0 } };
 
-bool useComplexWeight = false;
+bool useComplexWeight = true;
 
 bool foundGoal = parentNode.CalculateCosts(goal);
 
@@ -58,11 +58,6 @@ while(!foundGoal && queue.TryDequeue(out var tile, out _))
         if (child is not null && !child.repeat)
         {
             foundGoal = child.CalculateCosts(goal);
-            if (order.Any(x => x.PositionsEqual(child)))
-            {
-                child.repeat = true;
-                continue;
-            }
 
             if (foundGoal)
                 break;
@@ -96,7 +91,10 @@ while(tiles.TryPop(out var tile))
     if (tile.repeat)
         sb.Append("[#OrangeRed]");
     else if (tile.success)
+    {
         sb.Append("[#LightGreen]");
+        depthCap = tile.depth;
+    }
 
     sb.Append(':');
     sb.Append(tile);

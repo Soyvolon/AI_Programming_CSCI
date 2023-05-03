@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueensProblem", "QueensProblem\QueensProblem.csproj", "{726E1A9B-88A5-4588-B8DC-A1C5C6EC87F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightsTour", "KnightsTour\KnightsTour.csproj", "{E1529188-6058-403D-8DBA-CCB3E00600E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnightsTour", "KnightsTour\KnightsTour.csproj", "{E1529188-6058-403D-8DBA-CCB3E00600E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileGamePermutationGen", "TileGamePermutationGen\TileGamePermutationGen.csproj", "{6E9AB7EA-2E01-4B6C-BA43-BC44718761B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TileGamePermutationGen", "TileGamePermutationGen\TileGamePermutationGen.csproj", "{2C4CFC71-26D5-4A9F-B9A0-53975B041FC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{E1529188-6058-403D-8DBA-CCB3E00600E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1529188-6058-403D-8DBA-CCB3E00600E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1529188-6058-403D-8DBA-CCB3E00600E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E9AB7EA-2E01-4B6C-BA43-BC44718761B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E9AB7EA-2E01-4B6C-BA43-BC44718761B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E9AB7EA-2E01-4B6C-BA43-BC44718761B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E9AB7EA-2E01-4B6C-BA43-BC44718761B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4CFC71-26D5-4A9F-B9A0-53975B041FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4CFC71-26D5-4A9F-B9A0-53975B041FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4CFC71-26D5-4A9F-B9A0-53975B041FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4CFC71-26D5-4A9F-B9A0-53975B041FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
